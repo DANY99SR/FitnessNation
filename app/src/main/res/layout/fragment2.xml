@@ -20,7 +20,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/selector_join_session"
         android:padding="@dimen/default_padding_big"
-        android:text="NextFr"
+        android:text="@string/NextFr"
         android:textAllCaps="false"
         android:layout_gravity="center"
         android:textColor="@color/colorAccent" />

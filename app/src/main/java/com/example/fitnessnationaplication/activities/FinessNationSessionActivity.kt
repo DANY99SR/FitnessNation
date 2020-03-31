@@ -12,10 +12,8 @@ class FinessNationSessionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finess_nation_session)
-        btn_go_to_F2A2.setOnClickListener {
-            changeFragment()
 
-        }
+        setsecondFragment()
     }
 
     companion object {
@@ -48,7 +46,7 @@ class FinessNationSessionActivity : AppCompatActivity() {
             }
 
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fly_android_session, fragment,this.value)
+            transaction.replace(R.id.fragment1, fragment,this.value)
             transaction.addToBackStack(this.value)
             transaction.commit()
 
@@ -56,12 +54,11 @@ class FinessNationSessionActivity : AppCompatActivity() {
 
         }
     }
-
-    fun setFirstFragment() {
+    fun setsecondFragment() {
         val fragment: fragment2= fragment2.newInstance()
 
         val transaction =supportFragmentManager.beginTransaction()
-        transaction.add(R.id.fly_android_session, fragment)
+        transaction.add(R.id.fragment1, fragment)
         transaction.addToBackStack(fragment2.toString())
         transaction.commit()
     }

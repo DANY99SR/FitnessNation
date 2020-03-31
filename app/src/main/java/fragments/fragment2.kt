@@ -27,20 +27,18 @@ class fragment2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val toast = Toast.makeText(this.context, "This is F1A2", Toast.LENGTH_SHORT).show()
         btn_next.setOnClickListener {
-            toTheSecondFragment()
-            val toast = Toast.makeText(this.context, "This is F2A2", Toast.LENGTH_SHORT).show()
+            toTheThirdFragment()
         }
 
 
     }
 
-    fun toTheSecondFragment() {
-        val transaction = fragmentManager!!.beginTransaction()
-        transaction.replace(R.id.fly_android_session, fragment3.newInstance())
+    fun toTheThirdFragment() {
+      /*  val transaction = fragmentManager!!.beginTransaction()
+        transaction.replace(R.id.fragment, fragment3.newInstance())
         transaction.addToBackStack(fragment3.toString())
-        transaction.commit()
+        transaction.commit()*/
     }
 }
 

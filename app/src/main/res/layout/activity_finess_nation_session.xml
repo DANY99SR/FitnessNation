@@ -7,32 +7,7 @@
     tools:context=".activities.FinessNationSessionActivity"
     android:background="@color/colorPrimary">
 
-    <FrameLayout
-        android:id="@+id/fly_android_session"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/default_margin"
-        android:background="@color/colorWhite"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
 
-    <Button
-        android:id="@+id/btn_go_to_F2A2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imv_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
-        android:padding="@dimen/default_padding_big"
-        android:background="@drawable/selector_join_session"
-        android:text="@string/GOF2A2"
-        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
