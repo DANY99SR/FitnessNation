@@ -3,6 +3,15 @@
 
     <string name="finess_nation_title">WELCOME \ TO</string>
     <string name="join_session">Let\'s start</string>
+    <string name="GOF2A2">GO to F2A2</string>
+    <string name="Replace">Replace F2A2 with F3A2</string>
+    <string name="Remove">Remove F1A1</string>
+    <string name="Close">Close the Activity</string>
+    <string name="NextFr">Next Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="FRAGMENT1">Hello fragment 1</string>
+    <string name="FRAGMENT2">Hello fragment 2</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

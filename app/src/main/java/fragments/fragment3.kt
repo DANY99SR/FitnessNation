@@ -8,24 +8,23 @@ import android.view.ViewGroup
 
 import com.example.fitnessnationaplication.R
 
-class F1A2 : Fragment() {
+class fragment3 : Fragment() {
+    companion object {
+        fun newInstance() = ThirdFragment()
+    }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_f1_a1, container, false)
-        return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
-
-    companion object {
-        fun newInstance()=F1A2()
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment3, container, false)
 
     }
+
+
 }
-

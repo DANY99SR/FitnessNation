@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fitnessnationaplication.R
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment1.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,15 +13,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_go_to_sessions.setOnClickListener {
-            gotoSessionActivity()
-        }
-
-
-    }
-
-    private fun gotoSessionActivity(){
-        val intent = Intent(this, FinessNationSessionActivity::class.java)
-        startActivity(intent)
     }
 }

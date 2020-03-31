@@ -27,34 +27,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/g_top" />
 
-    <ImageView
-        android:id="@+id/imv_logo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/fn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintWidth_percent="0.6"
-        />
 
-    <Button
-        android:id="@+id/btn_go_to_sessions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imv_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
-        android:padding="@dimen/default_padding_big"
-        android:background="@drawable/selector_join_session"
-        android:text="@string/join_session"
-        />
 
+    <fragment
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:name="fragments.fragment1"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="269dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

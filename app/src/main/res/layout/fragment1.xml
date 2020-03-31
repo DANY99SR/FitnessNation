@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.fragment1"
+    android:background="@color/colorWhite">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginBottom="342dp"
+        android:text="@string/FRAGMENT1"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_goto_act2"
+        android:layout_width="275dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/selector_join_session"
+        android:padding="@dimen/default_padding_big"
+        android:text="Go to Activity 2"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="1500dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_goto_act2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="172dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fn" />
+
+
+</RelativeLayout>
